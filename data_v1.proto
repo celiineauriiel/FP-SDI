@@ -1,0 +1,7 @@
+syntax = "proto3";
+package v1;
+message KeyValue {
+  string key = 1;
+  string content = 2;
+  int32 version = 10; // Field untuk identifikasi
+}

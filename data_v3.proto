@@ -1,0 +1,8 @@
+syntax = "proto3";
+package v3;
+message KeyValue {
+  string key = 1;
+  string author = 3;
+  int32 value = 4;
+  int32 version = 10;
+}

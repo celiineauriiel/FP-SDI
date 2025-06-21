@@ -1,0 +1,10 @@
+syntax = "proto3";
+package v4;
+message KeyValue {
+  enum Status { UNKNOWN = 0; ACTIVE = 1; ARCHIVED = 2; }
+  string key = 1;
+  string author = 3;
+  int32 value = 4;
+  Status status = 5;
+  int32 version = 10;
+}
